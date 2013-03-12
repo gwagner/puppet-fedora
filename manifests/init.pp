@@ -48,7 +48,7 @@ class fedora {
         'gcc':
             ensure => 'installed',
             provider => 'yum',
-            require => Yumrepo['centos-base', 'centos-updates', 'centos-extras'];
+            require => Yumrepo['centos-base'];
     }
 
     # host entry with multiple aliases
